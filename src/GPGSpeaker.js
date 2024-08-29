@@ -5,8 +5,7 @@ export class GPGSpeaker
     async symmetricalEncrypt(plainText, passkey)
     {
         if (passkey === "") {
-            alert("Error: You did not enter a passkey.");
-            return;
+            throw Error("No passkey");
         }
 
         const encrypted = await openpgp.encrypt({
@@ -27,8 +26,7 @@ export class GPGSpeaker
     async symmetricalDecrypt(armoredText, passkey)
     {
         if (passkey === "") {
-            alert("Error: You did not enter a passkey.");
-            return;
+            throw Error("No passkey");
         }
 
         const { data: decrypted } = await openpgp.decrypt({

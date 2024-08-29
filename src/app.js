@@ -8,6 +8,8 @@ $('#encryptButton').click(() => {
     speaker.symmetricalEncrypt($gpgTextBox.val(), passkey)
         .then((encrypted) => {
             $gpgTextBox.val(encrypted);
+        }).catch((error) => {
+            alert("Error: " + error);
         });
 });
 
@@ -19,6 +21,8 @@ $('#decryptButton').click(() => {
     speaker.symmetricalDecrypt($gpgTextBox.val(), passkey)
         .then((encrypted) => {
             $gpgTextBox.val(encrypted);
+        }).catch((error) => {
+            alert("Error: " + error);
         });
 });
 
