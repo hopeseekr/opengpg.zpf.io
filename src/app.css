@@ -1,3 +1,9 @@
+body {
+    background: url('../public/singularity.jpg') center fixed no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 .App {
     position: absolute;
     max-height: 500px;
@@ -50,7 +56,9 @@ textarea#gpgTextBox {
     height: 300px;
     width: 90%;
     min-width: 300px;
+    max-width: 1200px;
     max-height: 800px;
+    background: rgba(255, 255, 255, 0.75);
 }
 
 section#shoutbox {
@@ -60,4 +68,13 @@ section#shoutbox {
     margin: 0 auto;
     margin-top: 50px;
     width: 21em;
+}
+
+div#logoBox {
+    position: relative;
+    top: -520px;
+    height: 40px;
+    left: 320px;
+    background-color: transparent;
+    z-index: -1;
 }

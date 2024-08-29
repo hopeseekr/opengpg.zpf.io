@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>GPG Speaker: Encrypt/Decrypt GPG Symmetrically</title>
+    <meta charset="utf-8">
+    <meta name="viewport"            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color"         content="#000000">
+
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:creator"     content="@hopeseekr" />
+    <meta name="twitter:title"       content="opengpg.zpf.io Secret Messages" />
+    <meta name="twitter:description" content="Symmetrical PGP for the masses! An easy way to share secret messages with one another." />
+    <meta name="twitter:image"       content="https://opengpg.zpf.io/screenshot.jpg" />
+    <meta name="og:title"            content="opengpg.zpf.io Secret Messages" />
+    <meta name="og:description"      content="Symmetrical PGP for the masses! An easy way to share secret messages with one another." />
+    <meta name="og:image"            content="https://opengpg.zpf.io/screenshot.jpg" />
+
+    <script async="async" src="jquery-4.0.0-beta.slim.min.js"></script>
+    <script type="module" src="app.js"></script>
+    <!-- Including the bootstrap css via CDN -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="app.css"
+    />
+</head>
+<body>
+    <section class="App">
+        <div>
+            <h2>GPG Speaker</h2>
+            <h4>Encrypt/Decrypt GPG Symmetrically</h4>
+            <div>
+                <div><textarea id="gpgTextBox"></textarea></div>
+                <div>
+                    <label>Passkey: <input type="text" id="passkey" /></label>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col md-5">
+                            <button class="btn btn-primary" id="encryptButton">Symmetric Encrypt</button>
+                        </div>
+                        <div class="col md-7">
+                            <button class="btn btn-success" id="decryptButton">Symmetric Decrypt</button>
+<!--                            <ClipboardCopier targetText={this.gpgTextBox} />-->
+                        </div>
+                    </div>
+                </div>
+                <div id="logoBox"><img src="logo.png" /></div>
+                <section id="shoutbox">
+                    <p>A <a href="https://www.phpexperts.pro/" target="_blank"><strong>PHP Experts, Inc.</strong></a> project.</p>
+                    <div><a href="https://github.com/Node4Ever/opengpg.zpf.io" target="_blank"><strong>GitHub repository</strong></a></div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
